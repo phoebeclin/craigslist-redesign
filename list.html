@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Craigslist List View</title>
+	 <link rel="stylesheet" type="text/css" href="assets/css/liststyle.css">
+	 <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+</head>
+<body>
+	<div id="navbar">
+		<div class="logo">craigslist</div>
+		<div class="navbar_items">
+			<div id="nav_search" class="nav_item"><span><input type="text" name="search" placeholder="Search.."></span></div>
+			<div id="nav_option" class="nav_item">calendar</div>
+			<div id="nav_option" class="nav_item">about</div>
+			<div id="nav_option" class="nav_item">area</div>
+			<div id="nav_option" class="nav_item">language</div>
+				<div class="clear"></div>
+		</div>
+	</div>
+
+	<div id="container">
+		<div class="list_search">
+			<div id="list_searchbar" class="listsearch_item"><span><input type="text" style= "width: 600px; height: 35px; border-radius: 8px; border: none" name="search" placeholder="search housing"></span></div>
+			<div id="list_searchbutton" class="listsearch_item"><span><button class="gobutton">go!</button></span></div>
+		</div>
+
+		<div class="listgallery">
+			<div class="listgallery_option">view:</div>
+			<div class="listgallery_option"><span><button class="listoption">list</button></span></div>
+			<div class="listgallery_option"><span><button class="galleryoption">gallery</button></span></div>
+		</div>
+
+		<div class="page_toggle">
+			<div id="previous" class="toggle_item"><span><button class="prev_button">prev</button></span></div>
+			<div id= "pagenumber" class="toggle_item">
+				<span><button class="number_button"><b>1</b></button></span>
+				<span><button class="number_button">2</button></span>
+				<span><button class="number_button">3</button></span>
+				<span><button class="number_button">4</button></span>
+				<span><button class="number_button">5</button></span>
+				<span>...</span>
+			</div>
+			<div id="next" class="toggle_item"><span><button class="next_button">next</button></span></div>
+		</div>
+
+		<div class="list_listings">
+			<div class="list_item">
+				<div id= "icon_container" class="listing_content">
+					<div class="fave_button"><img class="icon" src="icons/star.png"></div>
+				</div>
+				<div id="listing_date" class="listing_content">Feb 23</div>
+				<div id="listing_title" class="listing_content">Three Bedroom Home in Pittsburg Conveniently Located Near Freeway</div>
+				<div id="listing_price" class="listing_content">$1995</div>
+				<div id="listings_info" class="listing_content">expand info</div>
+			</div>
+			<div class="list_item">
+				<div id= "icon_container" class="listing_content">
+					<div class="fave_button"><img class="icon" src="icons/star.png"></div>
+				</div>
+				<div id="listing_date" class="listing_content">Feb 23</div>
+				<div id="listing_title" class="listing_content">Beautiful spacious single level townhome</div>
+				<div id="listing_price" class="listing_content">$3625</div>
+				<div id="listings_info" class="listing_content">expand info</div>
+			</div>
+			<div class="list_item">
+				<div id= "icon_container" class="listing_content">
+					<div class="fave_button"><img class="icon" src="icons/star.png"></div>
+				</div>
+				<div id="listing_date" class="listing_content">Feb 23</div>
+				<div id="listing_title" class="listing_content">Cupertino Schools, large patio, wood floors</div>
+				<div id="listing_price" class="listing_content">$2295</div>
+				<div id="listings_info" class="listing_content">expand info</div>
+			</div>
+			<div class="list_item">
+				<div id= "icon_container" class="listing_content">
+					<div class="fave_button"><img class="icon" src="icons/star.png"></div>
+				</div>
+				<div id="listing_date" class="listing_content">Feb 23</div>
+				<div id="listing_title" class="listing_content">Great SoMa Live/Work Apartment/$500 Gift Card! - $99 Deposit</div>
+				<div id="listing_price" class="listing_content">$3999</div>
+				<div id="listings_info" class="listing_content">expand info</div>
+			</div>
+			<div class="list_item">
+				<div id= "icon_container" class="listing_content">
+					<div class="fave_button"><img class="icon" src="icons/star.png"></div>
+				</div>
+				<div id="listing_date" class="listing_content">Feb 23</div>
+				<div id="listing_title" class="listing_content">Lovely 1BR/1BA Aparment with Furnished Kitchen</div>
+				<div id="listing_price" class="listing_content">$1500</div>
+				<div id="listings_info" class="listing_content">expand info</div>
+			</div>
+			<div class="list_item">
+				<div id= "icon_container" class="listing_content">
+					<div class="fave_button"><img class="icon" src="icons/star.png"></div>
+				</div>
+				<div id="listing_date" class="listing_content">Feb 23</div>
+				<div id="listing_title" class="listing_content">Fully Updated 2bd/2bth Condo w/ Private Patio</div>
+				<div id="listing_price" class="listing_content">$4450</div>
+				<div id="listings_info" class="listing_content">expand info</div>
+			</div>
+		</div>
+
+		<div class="filter_panel">
+			<div class="filter_heading">housing</div>
+			<div class="distance_filter"><em>miles from zip</em></div>
+				<div id="miles" class="distance_input"><span><input type="text" name="search" placeholder="miles"></span></div>
+				<div id="zip" class="distance_input"><span><input type="text" name="search" placeholder="from zip"></span></div>
+			<div class="price_filter"><em>price</em></div>
+				<div id="pricemin" class="price_input"><span><input type="text" name="search" placeholder="min"></span></div>
+				<div id="pricemax" class="price_input"><span><input type="text" name="search" placeholder="max"></span></div>
+			<div class="bedbath_filter"><em>bed, bath</em></div>
+				<div id="bed" class="bedbath_input"><span><input type="text" name="search" placeholder="# bed"></span></div>
+				<div id="bath" class="bedbath_input"><span><input type="text" name="search" placeholder="# bath"></span></div>
+			<div class="size_filter"><em>sq ft</em></div>
+				<div id="sizemin" class="size_input"><span><input type="text" name="search" placeholder="min"></span></div>
+				<div id="sizemax" class="size_input"><span><input type="text" name="search" placeholder="max"></span></div>
+			<div class=etc_filter><em>misc</em></div>
+				<div id="cats" class="etc_check"><span><input type="checkbox" name="check1" value="catsok">cats ok</span></div>
+				<div id="dogs" class="etc_check"><span><input type="checkbox" name="check2" value="dogsok">dogs ok</span></div>
+				<div id="furniture" class="etc_check"><span><input type="checkbox" name="check3" value="furnished">furnished</span></div>
+				<div id="smoke" class="etc_check"><span><input type="checkbox" name="check4" value="nosmoking">no smoking</span></div>
+				<div id="wheelchair" class="etc_check"><span><input type="checkbox" name="check5" value="wheelchairs">wheelchair access</span></div>
+			<div class="filtergo">
+				<span><button id="filter_reset" class="filter_button">reset</button></span>
+				<span><button id="filter_update" class="filter_button">update search</button></span>
+			</div>
+	</div>
+
+</body>
+</html>

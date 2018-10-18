@@ -1,0 +1,408 @@
+body, html {
+	margin: 0;
+	font-family: 'Roboto Condensed', sans-serif;
+	background-color: #ededed;
+	-webkit-font-smoothing: antialiased;
+}
+
+#navbar {
+	position: relative;
+	height: 24px;
+	padding: 10px;
+	background-color: #fff;
+	color: #505959;
+	font-size: 18px;
+	letter-spacing: .1em;
+	font-weight: 400;
+	border: 1px solid rgba(0,0,0,0.2);
+}
+
+.logo {
+	position: absolute;
+	color: black;
+	font-size: 32px;
+	font-style: bold;
+	bottom: 4px;
+}
+
+.navbar_items {
+	position: absolute;
+	right: 6px;
+	bottom: 10px;
+	margin-left: 900px;
+}
+
+.nav_item {
+	display: inline-block;
+	cursor: pointer;
+	margin-right: 20px;
+	transition: 0.3s;
+	-moz-transition: 0.3s;
+	-webkit-transition: 0.3s;
+}
+
+.navbar_items #nav_option:hover {
+	opacity: 0.5;
+}
+
+#container {
+	width: 100%;
+	margin: 20px;
+	position: relative;
+}
+
+.list_search {
+	position: absolute;
+	margin-left: 50%;
+	transform: translateX(-50%);
+}
+
+.list_search .listsearch_item {
+	display: inline-block;
+	margin: 8px;
+}
+
+.gobutton {
+	background-color: #78909C;
+	color: white;
+	padding: 8px 10px;
+	font-size: 14px;
+	border: none;
+	cursor: pointer;
+	border-radius: 18px;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+}
+
+.gobutton:hover {
+	opacity: 0.8;
+}
+
+.listgallery {
+	position: absolute;
+	margin-left: 27%;
+	margin-top: 64px;
+}
+
+.listgallery .listgallery_option {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.listoption {
+	background-color: #54646d;
+	color: white;
+	border:none;
+	font-size: 14px;
+	cursor: pointer;
+	padding: 8px;
+	border-radius: 8px;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+}
+
+.listoption:hover {
+	opacity: 0.8;
+}
+
+.galleryoption {
+	background-color: #78909C;
+	color: white;
+	border: none;
+	font-size: 14px;
+	cursor: pointer;
+	padding: 8px;
+	border-radius: 8px;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+}
+
+.galleryoption:hover {
+	opacity: 0.8;
+}
+
+.page_toggle {
+	position: absolute;
+	margin-left: 50%;
+	transform: translateX(-35%);
+	margin-top: 60px;
+}
+
+.toggle_item {
+	display: inline-block;
+	margin: 4px;
+}
+
+.prev_button {
+	background-color: #78909C;
+	color: white;
+	border:none;
+	font-size: 14px;
+	cursor: pointer;
+	padding: 8px;
+	border-radius: 8px;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+}
+
+.prev_button:hover {
+	opacity: 0.8;
+}
+
+.number_button {
+	background-color: #ededed;
+	color: #78909C;
+	border: none;
+	font-size: 14px;
+	padding: 8px;
+	cursor: pointer;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+}
+
+.number_button:hover {
+	color: #54646d;
+}
+
+.next_button {
+	background-color: #78909C;
+	color: white;
+	border:none;
+	font-size: 14px;
+	cursor: pointer;
+	padding: 8px;
+	border-radius: 8px;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+}
+
+.next_button:hover {
+	opacity: 0.8;
+}
+
+.list_listings {
+	position: absolute;
+	margin-left: 56%;
+	transform: translateX(-55%);
+	margin-top: 140px;
+}
+
+.list_listings .list_item {
+	background-color: white;
+	border-radius: 12px;
+	height: 24px;
+	width: 750px;
+	padding: 18px;
+	padding-left: 8px;
+	margin-bottom: 24px;
+	cursor: pointer;
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	position: relative;
+}
+
+.list_listings .list_item:hover {
+	padding: 32px;
+}
+
+#icon_container {
+	position: absolute;
+	left: 1%;
+	width: 24px;
+	height: 24px;
+	margin-right:8px;
+}
+
+.icon {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	cursor: pointer;
+}
+
+.icon:hover {
+	opacity: 0.7;
+}
+
+.listing_content {
+	display: inline-block;
+	font-size: 18px;
+}
+
+#listing_date {
+	position: absolute;
+	left: 5%;
+	color: #505959;
+	margin-right: 8px;
+}
+
+#listing_title {
+	color: #78909C;
+	position: absolute;
+	left: 12%;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+}
+
+#listing_title:hover {
+	color: #54646d;
+}
+
+#listing_price {
+	color: #505959;
+	position: absolute;
+	left: 78%;
+	margin-left: 8px;
+}
+
+.list_item #listings_info {
+	position: absolute;
+	right: 20px;
+	color: #78909C;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+}
+
+.list_item #listings_info:hover {
+	color: #54646d;
+}
+
+.filter_panel {
+	background-color: white;
+	width: 325px;
+	height: 500px;
+	border-radius: 12px;
+	position: relative;
+	margin: 12px;
+	transform: translateY(2%);
+	padding-bottom: 12px;
+}
+
+.filter_heading {
+	position: absolute;
+	padding: 10px;
+	font-size: 24px;
+}
+
+.distance_filter {
+	position: absolute;
+	padding: 4px;
+	top: 48px;
+	left: 20px;
+}
+
+.distance_input {
+	display: inline-block;
+	padding: 2px;
+	margin-top: 64px;
+
+}
+
+#miles {
+	margin-left: 24px;
+	padding-top: 8px;
+}
+
+.price_filter {
+	position: absolute;
+	padding: 4px;
+	top: 98px;
+	left: 20px;
+}
+
+.price_input {
+	display: inline-block;
+	padding: 2px;
+	margin-top: 20px;
+}
+
+#pricemin {
+	margin-left: 24px;
+	padding-top: 8px;
+}
+
+.bedbath_filter {
+	position: absolute;
+	padding: 4px;
+	top: 148px;
+	left: 20px;
+}
+
+.bedbath_input {
+	display: inline-block;
+	padding: 2px;
+	margin-top: 20px;
+}
+
+#bed {
+	margin-left: 24px;
+	padding-top: 8px;
+}
+
+.size_filter {
+	position: absolute;
+	padding: 4px;
+	top: 198px;
+	left: 20px;
+}
+
+.size_input {
+	display: inline-block;
+	padding: 2px;
+	margin-top: 4px;
+}
+
+#sizemin {
+	margin-left: 24px;
+	padding-top: 24px; 
+}
+
+.etc_filter {
+	position: absolute;
+	padding: 4px;
+	top: 248px;
+	left: 20px;
+}
+
+.etc_check {
+	padding: 2px;
+	margin-top: 2px;
+	margin-left: 36px;
+}
+
+#cats {
+	margin-top: 28px;
+}
+
+.filtergo {
+	margin-left: 118px;
+	margin-top: 55px;
+}
+
+.filter_button {
+	display: inline-block;
+	margin: 4px;
+	background-color: #78909C;
+	color: white;
+	border: none;
+	font-size: 14px;
+	cursor: pointer;
+	padding: 8px;
+	border-radius: 8px;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+}
+
+.filter_button:hover {
+	opacity: 0.8;
+}
